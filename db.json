@@ -1,7 +1,7 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "https://blogs.canterbury.ac.uk/discursive/wp-content/uploads/sites/442/2018/11/Films-Hero-1260x600.jpg",
+  "title": "FilmsQuiz",
+  "description": "Essa cena é de qual filme? Vamos ver se você já assistiu muitos filmes",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",

@@ -14,6 +14,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 // `;
 
 export const QuizContainer = styled.div`
+  float: right;
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -43,7 +44,7 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Em breve...</p>
           </Widget.Content>
         </Widget>
 
