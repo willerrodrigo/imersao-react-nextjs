@@ -6,7 +6,7 @@ const FooterWrapper = styled.footer`
   padding: 20px;
   display: flex;
   align-items: center;
-  border-radius: 4px; 
+  border-radius: 4px;
   img {
     width: 58px;
     margin-right: 23px;
@@ -25,7 +25,7 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-export default function Footer(props) {
+export default function Footer(props: any) {
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
