@@ -1,17 +1,14 @@
+import { FormEvent, useState } from 'react'
 import styled from 'styled-components'
-import db from '../db.json';
+import { useRouter } from 'next/router'
+
 import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import db from '../db.json'
 
 export const QuizContainer = styled.div`
   float: right;
@@ -23,9 +20,18 @@ export const QuizContainer = styled.div`
     margin: auto;
     padding: 15px;
   }
-`;
+`
 
 export default function Home() {
+  const router = useRouter()
+  const [name, setName] = useState('')
+
+  const handleFormSubmit = (event: FormEvent) => {
+    event.preventDefault()
+
+    router.push(`/quiz?name=${name}`)
+  }
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -37,6 +43,18 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+
+            <form onSubmit={handleFormSubmit}>
+              <input
+                onChange={event => setName(event.target.value)}
+                placeholder="Diz ai seu nome"
+              />
+
+              <button type="submit" disabled={!name}>
+                Jogar
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -53,5 +71,5 @@ export default function Home() {
 
       <GitHubCorner projectUrl="https://github.com/willerrodrigo" />
     </QuizBackground>
-  );
+  )
 }
