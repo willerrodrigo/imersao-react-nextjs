@@ -4,20 +4,26 @@
   "description": "Essa cena é de qual filme? Vamos ver se você já assistiu muitos filmes",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://img.quizur.com/f/img5d857b188783b0.47123670.jpg?lastEdited=1569028893",
+      "title": "Essa cena é de qual filme?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
-      "alternatives": [".elemento", "*elemento", "#elemento", "%elemento"]
+      "answer": 1,
+      "alternatives": [
+        "De Volta Para O Futuro 2",
+        "De Volta Para O Futuro",
+        "De Volta Para O Futuro 3",
+        "Lobo Adolescente"
+      ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "image": "https://img.quizur.com/f/img5d861de2b926d6.25762909.jpg?lastEdited=1569070566",
+      "title": "Essa cena é de qual filme?",
       "description": "Faz tempo em haha",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa",
+        "As Crônicas de Nárnia: A Viagem do Peregrino da Alvorada",
+        "As Crônicas de Nárnia: Príncipe Caspian"
       ]
     }
   ],
