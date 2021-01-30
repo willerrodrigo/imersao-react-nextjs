@@ -37,7 +37,11 @@ export default function Footer(props: any) {
       </a>
       <p>
         Orgulhosamente criado durante a{' '}
-        <a href="https://www.alura.com.br/" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/alura-challenges/aluraquiz-base"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>Imersão React da Alura</span>
         </a>
       </p>
