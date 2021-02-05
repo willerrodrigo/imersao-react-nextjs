@@ -44,7 +44,6 @@ type GitHubCornerProps = {
   projectUrl: string
 }
 
-// eslint-disable-next-line react/prop-types
 export default function GitHubCorner({ projectUrl }: GitHubCornerProps) {
   return (
     <Wrapper>

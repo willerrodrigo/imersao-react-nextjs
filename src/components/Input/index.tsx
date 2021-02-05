@@ -22,12 +22,7 @@ type InputProps = {
 export default function Input({ onChange, placeholder, ...props }: InputProps) {
   return (
     <div>
-      <InputBase
-        placeholder={placeholder}
-        onChange={onChange}
-        // eslint-disable-next-line react/jsx-props-no-spreading
-        {...props}
-      />
+      <InputBase placeholder={placeholder} onChange={onChange} {...props} />
     </div>
   )
 }
